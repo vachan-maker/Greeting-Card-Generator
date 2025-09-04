@@ -81,7 +81,7 @@ export default function Home() {
           Generate Greeting
         </motion.button>
         {link && (
-          <Link href={link}>        
+          <Link href={link} target="_blank">        
           <button className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors">
           View
 
