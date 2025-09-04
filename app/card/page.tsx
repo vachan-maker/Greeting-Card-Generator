@@ -94,7 +94,7 @@ function CardLayout({
     <div
       className="fixed inset-0 flex flex-col justify-center items-start p-0 overflow-hidden"
       style={{
-        backgroundImage: "url('/bg.png')",
+        backgroundImage: "url('/bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
