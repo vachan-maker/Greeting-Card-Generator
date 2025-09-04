@@ -76,14 +76,14 @@ export default function Home() {
         
         <motion.button
           onClick={createLink}
-          className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors"
+          className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors cursor-pointer"
         >
           Generate Greeting
         </motion.button>
         {link && (
           <Link href={link} target="_blank">        
-          <button className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors">
-          View
+          <button className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors cursor-pointer">
+          View Greeting
 
         </button>
         </Link>)}
@@ -102,13 +102,13 @@ export default function Home() {
                 href={link}
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 text-amber-700 text-sm hover:underline mb-2 truncate"
+                className="flex-1 text-amber-700 text-sm hover:underline mb-2 truncate underline"
               >
                 {link}
               </a>
               <button
                 onClick={copyToClipboard}
-                className="p-2 rounded-md hover:bg-gray-100 transition"
+                className="p-2 rounded-md hover:bg-gray-100 transition cursor-pointer"
               >
                 <Copy className="w-4 h-4 text-gray-600" />
               </button>
