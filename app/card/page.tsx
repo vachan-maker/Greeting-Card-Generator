@@ -116,7 +116,7 @@ function CardLayout({
         </h2>
         <h1
           className={`${
-            isMobile ? "text-5xl" : "text-8xl"
+            isMobile ? "text-4xl" : "text-8xl"
           } font-extrabold text-green-950 ${manjari.className}`}
         >
           ഓണാശംസകൾ
@@ -148,7 +148,7 @@ function CardLayout({
           {/* Music button */}
           <button
             onClick={toggleMusicAndAnimation}
-            className={`text-green-900 flex items-center justify-center gap-2 px-4 py-2 rounded-full ${
+            className={`text-green-900 flex items-center justify-center gap-2 px-4 py-2 rounded-full cursor-pointer ${
               isMobile ? "text-base mt-20" : "text-xl mt-6"
             } font-extrabold bg-yellow-300 hover:bg-yellow-400 transition-colors ${manjari.className} 
               ${
@@ -191,7 +191,7 @@ function CardLayout({
         width={isMobile ? 300 : 600}
         height={isMobile ? 300 : 600}
         customDelay={0.6}
-        className={`absolute bottom-0 ${isMobile ? "right-4" : "right-24"}`}
+        className={`absolute bottom-0 ${isMobile ? "left-1/2 -translate-x-1/2" : "right-24"}`}
       />
       <GiggleImage
         src="/grass.png"
@@ -213,7 +213,7 @@ function CardLayout({
       {/* Floating button */}
       <button
         onClick={() => router.push("/")}
-        className="fixed bottom-6 left-1/2 -translate-x-1/2 lg:right-6 z-50 lg:px-4 lg:py-2 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold shadow-lg transition cursor-pointer px-3 py-1"
+        className="fixed bottom-6 left-1/2 -translate-x-1/2 lg:translate-0 lg:left-[unset] lg:right-10 z-50 lg:px-4 lg:py-2 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold shadow-lg transition cursor-pointer px-3 py-1"
       >
         Make your own card
       </button>

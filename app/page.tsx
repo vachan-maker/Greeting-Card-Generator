@@ -82,7 +82,7 @@ export default function Home() {
         </motion.button>
         {link && (
           <Link href={link} target="_blank">        
-          <button className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors cursor-pointer">
+          <button className="mt-6 w-full rounded-xl bg-amber-400 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors cursor-pointer">
           View Greeting
 
         </button>
