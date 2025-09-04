@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Copy } from "lucide-react";
-
+import Link from "next/link";
 export default function Home() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -73,13 +73,21 @@ export default function Home() {
           />
         </div>
 
-        {/* Button */}
+        
         <motion.button
           onClick={createLink}
           className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors"
         >
           Generate Greeting
         </motion.button>
+        {link && (
+          <Link href={link}>        
+          <button className="mt-6 w-full rounded-xl bg-amber-500 text-white font-medium py-3 shadow-md hover:bg-amber-600 transition-colors">
+          View
+
+        </button>
+        </Link>)}
+
 
         {/* Generated Link Box */}
         {link && (
@@ -89,12 +97,12 @@ export default function Home() {
             className="mt-6"
           >
             <p className="text-gray-700 text-sm mb-2">Your greeting link:</p>
-            <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-4">
               <a
                 href={link}
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 text-amber-700 text-sm break-words hover:underline"
+                className="flex-1 text-amber-700 text-sm hover:underline mb-2 truncate"
               >
                 {link}
               </a>
