@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Onam Greeting Card Generator
 
-## Getting Started
+Why send a boring "Happy Onam" text when you can send a **beautiful, musical, personalized greeting card**?
 
-First, run the development server:
+This project is a **Greeting Card Generator** for Onam. Instead of typing plain messages, you can create and share a **link** that opens a festive card with:
+
+* 🖋️ **Your Name**
+* 💌 **Personalized Message**
+* 🎶 **Onam Music**
+
+## Features
+
+* 🌼 Generate & share unique **Onam greeting card links**
+* 🖊️ Add your **name & message** for personalization
+* 🎶 Built-in **Onam music player** (click the button, feel the vibes!)
+* 📱 Works on desktop & mobile (because happiness should be cross-platform 💻📱)
+
+---
+
+## How It Works
+
+1. Open the Greeting Card Generator.
+2. Enter your **name** + (optional) **message**.
+3. Get a **special shareable link**.
+4. Send it to your friends & family.
+
+---
+
+## Quick Start
+
+Clone and run locally:
 
 ```bash
+# Clone repo
+git clone https://github.com/your-username/onam-greeting-card.git
+
+# Move into project
+cd onam-greeting-card
+
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your generator should now be live at `http://localhost:3000/` 🎉
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+PRs are always welcome!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
