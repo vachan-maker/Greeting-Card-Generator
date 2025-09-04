@@ -149,7 +149,7 @@ function CardLayout({
           <button
             onClick={toggleMusicAndAnimation}
             className={`text-green-900 flex items-center justify-center gap-2 px-4 py-2 rounded-full cursor-pointer ${
-              isMobile ? "text-base mt-20" : "text-xl mt-6"
+              isMobile ? "text-base mt-4" : "text-xl mt-6"
             } font-extrabold bg-yellow-300 hover:bg-yellow-400 transition-colors ${manjari.className} 
               ${
                 isMobile
@@ -170,7 +170,7 @@ function CardLayout({
 
       {/* Decorations */}
       <GiggleImage
-        src="/umbrella-right.png"
+        src="/umbrella-right.webp"
         alt="Umbrella"
         width={isMobile ? 0 : 250}
         height={isMobile ? 0 : 250}
@@ -178,7 +178,7 @@ function CardLayout({
         className="absolute top-14 right-0"
       />
       <GiggleImage
-        src="/grass-right.png"
+        src="/grass-right.webp"
         alt="Grass Right"
         width={isMobile ? 150 : 250}
         height={isMobile ? 120 : 200}
@@ -186,15 +186,15 @@ function CardLayout({
         className="absolute bottom-0 right-0"
       />
       <GiggleImage
-        src="/maveli.png"
+        src="/maveli.webp"
         alt="Maveli"
         width={isMobile ? 300 : 600}
         height={isMobile ? 300 : 600}
         customDelay={0.6}
-        className={`absolute bottom-0 ${isMobile ? "left-1/2 -translate-x-1/2" : "right-24"}`}
+        className={`absolute bottom-0 ${isMobile ? "left-1/2 -translate-x-1/2" : "right-24 md:w-4/12"}`}
       />
       <GiggleImage
-        src="/grass.png"
+        src="/grass.webp"
         alt="Grass"
         width={isMobile ? 150 : 250}
         height={isMobile ? 150 : 250}
@@ -202,7 +202,7 @@ function CardLayout({
         className={`absolute bottom-0 ${isMobile ? "left-6" : "right-[38rem]"}`}
       />
       <GiggleImage
-        src="/leaf.png"
+        src="/leaf.webp"
         alt="Leaf"
         width={isMobile ? 100 : 200}
         height={isMobile ? 100 : 200}
